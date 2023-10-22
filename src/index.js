@@ -1,6 +1,6 @@
-//import debounce from 'lodash/debounce';
-//import Notiflix from 'notiflix';
-//import { fetchCountries } from './fetchCountries.js';
+import debounce from 'lodash/debounce';
+import Notiflix from 'notiflix';
+import { fetchCountries } from './fetchCountries.js';
 
 const searchInput = document.querySelector('#search-box');
 const countryList = document.querySelector('.country-list');
