@@ -2,9 +2,11 @@ import debounce from 'lodash/debounce';
 import Notiflix from 'notiflix';
 import { fetchCountries } from './fetchCountries.js';
 
+
 const searchInput = document.querySelector('#search-box');
 const countryList = document.querySelector('.country-list');
 const countryInfo = document.querySelector('.country-info');
+
 
 function renderCountryList(countries) {
   const listItems = countries.map((country) => {
@@ -69,4 +71,5 @@ function onSearchInput() {
       console.error(error);
     });
 }
+
 searchInput.addEventListener('input', debounce(onSearchInput, 300));
